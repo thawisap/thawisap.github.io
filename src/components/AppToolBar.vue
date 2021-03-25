@@ -9,7 +9,7 @@
               'title font-weight-bold': $vuetify.breakpoint.smAndDown,
             }"
           >
-            Precharat
+            Thawisap
           </div>
           <v-spacer></v-spacer>
           <v-toolbar-items class="text-right">

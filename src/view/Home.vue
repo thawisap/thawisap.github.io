@@ -39,9 +39,16 @@
                   </h2>
                 </div>
                 <div>
-                    <v-chip v-for="(ref, i) in experience.ref" :key="i" :href="ref.link" :color="experience.color" class="ma-2" dark>
-                      <v-icon>mdi-link</v-icon> {{ ref.name }}
-                    </v-chip>
+                  <v-chip
+                    v-for="(ref, i) in experience.ref"
+                    :key="i"
+                    :href="ref.link"
+                    :color="experience.color"
+                    class="ma-2"
+                    dark
+                  >
+                    <v-icon>mdi-link</v-icon> {{ ref.name }}
+                  </v-chip>
                 </div>
               </v-timeline-item>
             </v-timeline>
@@ -124,61 +131,49 @@
         </v-flex>
         <template v-for="(contact, i) in contacts">
           <v-flex sm6 md4 xs12 :key="i">
-            <app-contact :contact="contact" ></app-contact>
+            <app-contact :contact="contact"></app-contact>
           </v-flex>
         </template>
       </v-layout>
     </v-container>
   </div>
+
+  <!-- I love codding and develop web and apps. I lilk to learn new tecnology and research new technical for develop yourself    -->
+
+  <!-- ฉันชื่นชอบในการเขียนโปรแกรม และ ชอบเรียนรู้เทคโนโลยีใหม่ๆ ,ชอบหาเทคนิคใหม่ๆในการพัฒนาตัวเอง ,ฉันชอบในการทำงานเป็นทีม ,ฉันสามารถเรียนรู้ได้เร็ว  -->
 </template>
 
 <script>
 import AppBanner from "@/components/AppBanner.vue";
 import AppSkillCard from "../components/AppSkillCard.vue";
-import AppContact from '../components/AppContact.vue';
+import AppContact from "../components/AppContact.vue";
 
 export default {
   components: { AppBanner, AppSkillCard, AppContact },
   data: () => ({
     aboutMe:
-      "I love coding and develop web and apps. I enjoy learning and Try new technology for develope software in my free time. I just curious to see how things work. I quick learnning when i love it. Love to encourage my friend that they can do it too !",
+      "I love codding and develop web and apps. I lilk to learn new tecnology and research new technical for develop yourself.",
     bachelor:
-      "Bachelor of Science Program in Information and Communication Technology, Major Computer Science, Sukhothai Thammathirat Open University — 2013-2016",
+      "Bachelor of Computer Science ,Khon Kaen University — 2013-2016",
     experiences: [
       {
-        color: "red",
-        year: "2019 - PRESET",
-        business: "SCG Digital Office",
-        role: "Technology Developer",
+        color: "yellow",
+        year: "2018 - PRESET",
+        business: "Ookbee Co., Ltd.",
+        role: "Web Developer",
         ref: [
           {
-            name: "SCG Digital Office",
-            link: "https://www.scg.com/innovation/digital-office-scg/",
+            name: "Ookbee Co., Ltd.",
+            link: "https://www.ookbee.com/",
           },
         ],
       },
-      {
-        color: "green",
-        year: "2018 - 2019",
-        business: "Deepscope & Soilfish",
-        role: "Senior Fullstack Software Engineer",
-        ref: [
-          { name: "Deepscope", link: "https://deepscope.com/" },
-          { name: "Soilfish", link: "https://soilfish.co/" },
-        ],
-      },
-      {
-        color: "cyan",
-        year: "2017 - 2018",
-        business: "Tixget / Dtac Accelerate",
-        role: "Software Developer",
-        ref: [{ name: "tixget", link: "#" }],
-      },
+
       {
         color: "orange",
         year: "2016 - 2017",
         business: "Orange Technology Solution",
-        role: "Web Programmer",
+        role: "Web Developer",
         ref: [{ name: "Orange", link: "https://www.orange-thailand.com/" }],
       },
     ],
@@ -187,16 +182,12 @@ export default {
       { name: "Typescript", logo: "typescript.png" },
       { name: "Node Js", logo: "nodejs.png" },
       { name: "PHP", logo: "php.png" },
-      { name: "Python", logo: "python.png" },
-      { name: "Go", logo: "go.png" },
+      { name: "Python", logo: "python.png" }, 
       { name: "Dart", logo: "dart.png" },
       { name: "Html5", logo: "html.png" },
       { name: "Css3", logo: "css.png" },
       { name: "Sass", logo: "sass.png" },
-      { name: "Less", logo: "less.png" },
-      { name: "Json", logo: "json.png" },
-      { name: "Yaml", logo: "yml.png" },
-      { name: "Xml", logo: "xml.png" },
+      { name: "Less", logo: "less.png" }, 
     ],
     frameworks: [
       { name: "NestJs", logo: "nest.png", description: "JS / TS" },
@@ -206,75 +197,49 @@ export default {
       { name: "React", logo: "react.png", description: "JS / TS" },
       { name: "NextJs", logo: "nextjs.png", description: "JS / TS" },
       { name: "NuxtJs", logo: "nuxtjs.png", description: "JS / TS" },
-      { name: "Angular", logo: "angular.png", description: "JS / TS" },
-      { name: "Fastify", logo: "fastify.png", description: "JS / TS" },
       { name: "Flutter", logo: "flutter.png", description: "Dart" },
-      { name: "Laravel", logo: "laravel.png", description: "PHP" },
-      { name: "Codeigniter", logo: "codeigniter.png", description: "PHP" },
-      { name: "PHP Slim", logo: "phpslim.png", description: "PHP" },
-      { name: "Django", logo: "django.png", description: "Python" },
+      { name: "Laravel", logo: "laravel.png", description: "PHP" }, 
       { name: "Flask", logo: "flask.png", description: "Python" },
-      { name: "Fastapi", logo: "fast-api.png", description: "Python" },
-      { name: "Echo", logo: "echo.png", description: "Go" },
-      { name: "Gin", logo: "gin.jpeg", description: "Go" },
     ],
     devOpsSkills: [
       { name: "Docker", logo: "docker.png" },
-      { name: "Kubernetes", logo: "kubernetes.png" },
-      { name: "Jenkins", logo: "jenkins.png" },
-      { name: "Terraform", logo: "terraform.png" },
       { name: "Git", logo: "git.png" },
       { name: "Github", logo: "github.png" },
       { name: "Gitlab", logo: "gitlab.png" },
-      { name: "AWS", logo: "aws.png" },
-      { name: "GCP", logo: "gcp.png" },
-      { name: "Argo CI/CD", logo: "argo.png" },
-      { name: "Pulumi", logo: "pulumi.png" },
-      { name: "Digital Ocean", logo: "digital-ocean.png" },
-      { name: "Heroku", logo: "heroku.png" },
-      { name: "Netlify", logo: "netlify.png" },
-      { name: "Vercel", logo: "vercel.png" },
     ],
     databaseSkills: [
       { name: "MySQL", logo: "mysql.png" },
       { name: "Postgresql", logo: "postgresql.png" },
       { name: "MongoDB", logo: "mongodb.png" },
-      { name: "Firebase", logo: "firebase.png" },
-      { name: "MSSQL", logo: "mssql.png" },
+      { name: "Firebase", logo: "firebase.png" }, 
       { name: "Sqlite", logo: "sqlite.png" },
     ],
     contacts: [
-        {
-          name: "Email",
-          value: "preecharat.lookod@gmail.com",
-          link: "mailto:reecharat.lookod@gmail.com",
-          icon: "mdi-email"
-        },
-        {
-          name: "LinkedIn",
-          value: "Precharat Chuenta",
-          link: "https://www.linkedin.com/in/preecharat-chuenta/",
-          icon: "mdi-linkedin"
-        },
-        {
-          name: "Github",
-          value: "iamlookod",
-          link: "https://github.com/iamlookod/",
-          icon: "mdi-github"
-        },
-        {
-          name: "Facebook",
-          value: "Precharat Chuenta",
-          link: "https://www.facebook.com/OddPrecharat",
-          icon: "mdi-facebook"
-        },
-        {
-          name: "Tel",
-          value: "Precharat Chuenta",
-          link: "tel:66803355181",
-          icon: "mdi-phone"
-        },
-      ]
+      {
+        name: "Email",
+        value: "thawisap.numnoii@gmail.com",
+        link: "mailto:thawisap.numnoii@gmail.com",
+        icon: "mdi-email",
+      },
+      {
+        name: "Github",
+        value: "thawisap",
+        link: "https://github.com/Thawisap",
+        icon: "mdi-github",
+      },
+      {
+        name: "Facebook",
+        value: "Thawisap prathammate",
+        link: "https://www.facebook.com/thawisap.prathammate/",
+        icon: "mdi-facebook",
+      },
+      {
+        name: "Tel",
+        value: "Thawisap prathammate",
+        link: "tel:66829913791",
+        icon: "mdi-phone",
+      },
+    ],
   }),
 };
 </script>
