@@ -137,10 +137,6 @@
       </v-layout>
     </v-container>
   </div>
-
-  <!-- I love codding and develop web and apps. I lilk to learn new tecnology and research new technical for develop yourself    -->
-
-  <!-- ฉันชื่นชอบในการเขียนโปรแกรม และ ชอบเรียนรู้เทคโนโลยีใหม่ๆ ,ชอบหาเทคนิคใหม่ๆในการพัฒนาตัวเอง ,ฉันชอบในการทำงานเป็นทีม ,ฉันสามารถเรียนรู้ได้เร็ว  -->
 </template>
 
 <script>
@@ -153,8 +149,7 @@ export default {
   data: () => ({
     aboutMe:
       "I love codding and develop web and apps. I lilk to learn new tecnology and research new technical for develop yourself.",
-    bachelor:
-      "Bachelor of Computer Science ,Khon Kaen University — 2013-2016",
+    bachelor: "Bachelor of Computer Science ,Khon Kaen University — 2013-2016",
     experiences: [
       {
         color: "yellow",
@@ -182,12 +177,12 @@ export default {
       { name: "Typescript", logo: "typescript.png" },
       { name: "Node Js", logo: "nodejs.png" },
       { name: "PHP", logo: "php.png" },
-      { name: "Python", logo: "python.png" }, 
+      { name: "Python", logo: "python.png" },
       { name: "Dart", logo: "dart.png" },
       { name: "Html5", logo: "html.png" },
       { name: "Css3", logo: "css.png" },
       { name: "Sass", logo: "sass.png" },
-      { name: "Less", logo: "less.png" }, 
+      { name: "Less", logo: "less.png" },
     ],
     frameworks: [
       { name: "NestJs", logo: "nest.png", description: "JS / TS" },
@@ -198,7 +193,7 @@ export default {
       { name: "NextJs", logo: "nextjs.png", description: "JS / TS" },
       { name: "NuxtJs", logo: "nuxtjs.png", description: "JS / TS" },
       { name: "Flutter", logo: "flutter.png", description: "Dart" },
-      { name: "Laravel", logo: "laravel.png", description: "PHP" }, 
+      { name: "Laravel", logo: "laravel.png", description: "PHP" },
       { name: "Flask", logo: "flask.png", description: "Python" },
     ],
     devOpsSkills: [
@@ -211,7 +206,7 @@ export default {
       { name: "MySQL", logo: "mysql.png" },
       { name: "Postgresql", logo: "postgresql.png" },
       { name: "MongoDB", logo: "mongodb.png" },
-      { name: "Firebase", logo: "firebase.png" }, 
+      { name: "Firebase", logo: "firebase.png" },
       { name: "Sqlite", logo: "sqlite.png" },
     ],
     contacts: [
