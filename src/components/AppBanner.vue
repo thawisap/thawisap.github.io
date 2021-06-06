@@ -11,7 +11,14 @@
                   'title font-weight-bold': $vuetify.breakpoint.smAndDown,
                 }"
               >
-                Welcome to my page.
+                 <v-avatar size="60" class="mb-4">
+                    <v-img
+                      position="top"
+                      :src="user"
+                      class="rounded-lg flex"
+                    ></v-img>
+                  </v-avatar>
+                   Welcome to my portfolio.
               </div>
               <div
                 :class="{
@@ -31,10 +38,12 @@
 
 <script>
 import Banner from "@/assets/banner/photo-1508830524289-0adcbe822b40.jpeg";
+import user from "@/assets/165173659_448587036222196_4093650296544086329_n.jpeg";
 export default {
   data() {
     return {
       Banner,
+      user
     };
   },
 };

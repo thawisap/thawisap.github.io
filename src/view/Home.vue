@@ -3,14 +3,20 @@
     <app-banner></app-banner>
     <v-container>
       <v-layout wrap>
-        <v-flex xs12>
+        <!-- <v-flex xs12>
           <div class="display-1 font-weight-bold" id="about">About me</div>
-        </v-flex>
-        <v-flex xs12 mt-5>
-          <div class="body-1">{{ aboutMe }}</div>
+        </v-flex> -->
+        <v-flex xs12>
+          <v-layout wrap >
+            <v-flex xs12 id="education">
+              <div class="display-1 font-weight-bold">Education</div>
+            </v-flex>
+            <v-flex xs12 mt-5>
+              <div class="text-h6">{{ bachelor }}</div>
+            </v-flex>
+          </v-layout>
         </v-flex>
       </v-layout>
-
       <v-layout wrap my-16>
         <v-flex xs12 id="experience">
           <div class="display-1 font-weight-bold">Experience</div>
@@ -55,16 +61,6 @@
           </div>
         </v-flex>
       </v-layout>
-
-      <v-layout wrap my-16>
-        <v-flex xs12 id="education">
-          <div class="display-1 font-weight-bold">Education</div>
-        </v-flex>
-        <v-flex xs12 mt-5>
-          <div class="text-h6">{{ bachelor }}</div>
-        </v-flex>
-      </v-layout>
-
       <v-layout wrap my-16>
         <v-flex xs12 id="skill">
           <div class="display-1 font-weight-bold">Language Skills</div>
@@ -148,7 +144,7 @@ export default {
   components: { AppBanner, AppSkillCard, AppContact },
   data: () => ({
     aboutMe:
-      "I love codding and develop web and apps. I lilk to learn new tecnology and research new technical for develop yourself.",
+      "I like to learn new tecnology and research new technical for develop yourself. , I love codding web and apps ",
     bachelor: "Bachelor of Computer Science ,Khon Kaen University — 2013-2016",
     experiences: [
       {
@@ -178,7 +174,6 @@ export default {
       { name: "Node Js", logo: "nodejs.png" },
       { name: "PHP", logo: "php.png" },
       { name: "Python", logo: "python.png" },
-      { name: "Dart", logo: "dart.png" },
       { name: "Html5", logo: "html.png" },
       { name: "Css3", logo: "css.png" },
       { name: "Sass", logo: "sass.png" },
@@ -189,10 +184,10 @@ export default {
       { name: "ExpressJs", logo: "express.png", description: "JS / TS" },
       { name: "KoaJs", logo: "koa.png", description: "JS / TS" },
       { name: "Vue", logo: "vue.png", description: "JS / TS" },
-      { name: "React", logo: "react.png", description: "JS / TS" },
+      { name: "React / React Native", logo: "react.png", description: "JS / TS" },
+      // { name: "React Native", logo: "react.png", description: "JS / TS" },
       { name: "NextJs", logo: "nextjs.png", description: "JS / TS" },
       { name: "NuxtJs", logo: "nuxtjs.png", description: "JS / TS" },
-      { name: "Flutter", logo: "flutter.png", description: "Dart" },
       { name: "Laravel", logo: "laravel.png", description: "PHP" },
       { name: "Flask", logo: "flask.png", description: "Python" },
     ],
@@ -231,7 +226,7 @@ export default {
       {
         name: "Tel",
         value: "Thawisap prathammate",
-        link: "tel:66829913791",
+        link: "tel:0829913791",
         icon: "mdi-phone",
       },
     ],
